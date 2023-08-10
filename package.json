@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate-react",
+  "name": "Card Game - React VErsion",
   "version": "0.2.0",
-  "description": "React!",
+  "description": "Card Game - React Version",
   "repository": "https://github.com/dev-academy-challenges/react-boilerplate.git",
   "main": "server/index.js",
   "scripts": {
