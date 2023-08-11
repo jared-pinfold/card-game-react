@@ -1,5 +1,99 @@
 body {
-  background-color: #faf8f1;
-  color: #0a1520;
-  font-family: 'Poppins', sans-serif;
+	background: white;
+	background-image: linear-gradient(90deg, rgba(208,232,234,.5) 50%, transparent 0), linear-gradient(rgba(208,232,234,.5) 50%, transparent 0);
+	background-size: 100px 100px;
+	font-family: 'Fira Code', monospace;
+	text-align: center;
+}
+
+p {
+	font-size: 2vw;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 3vw;
+	font-weight: 700;
+}
+
+hr {
+  size: 5;
+  border-style: solid;
+}
+
+.container {
+	background-color: rgba(255, 255, 255, 0.65);
+	border: 3px solid black;
+	border-radius: 3px;
+	width: 80%;
+	height: auto;
+	padding: 0px 50px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	backdrop-filter: blur(11.7px);
+	-webkit-backdrop-filter: blur(11.7px);
+  display: flex;
+  justify-content: space-around;
+}
+
+.hi {
+  display: flex;
+}
+.card {
+  width: 40%;
+  background-color: lightblue;
+}
+
+.button {
+	font-family: 'Fira Code', monospace;
+	font-size: 1.5vw;
+	font-weight: 500;
+	display: inline-block;
+	outline: 0;
+	cursor: pointer;
+	border: 3px solid black;
+	border-radius: 3px;
+	color: white;
+	background: black;
+	padding: 12px 20px;
+	text-align: center;
+	transition-duration: .15s;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	margin: 0px 15px 15px 15px;
+}
+
+.reveal-card {
+  display: none;
+}
+
+.attribute {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.name {
+  margin-bottom: 25px;
+}
+
+.card-image {
+  width: 20%;
+}
+
+.card-back {
+  display: none;
+}
+
+.decks {
+	display: flex;
+	justify-content: space-around;
+}
+
+button:hover {
+	color: black;
+	background-color: rgba(255, 255, 255, 0.65);
+	backdrop-filter: blur(11.7px);
+	-webkit-backdrop-filter: blur(11.7px);
 }

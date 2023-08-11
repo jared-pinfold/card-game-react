@@ -1,10 +1,17 @@
+import { Cards } from "./Cards"
+import { Header } from "./Header"
+import { Status } from "./Status"
+
 function App() {
   return (
-    <div>
-      <h1>App</h1>
-      <p>React development has begun!</p>
-    </div>
-  )
+    <>
+      <Header />
+      <main>
+        <Cards />
+        <Status />
+      </main>
+    </>
+ )
 }
 
 export default App

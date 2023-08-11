@@ -1,4 +1,4 @@
-# React Boilerplate
+# Card Game
 
 ## Packages Included
 
