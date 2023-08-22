@@ -2,6 +2,7 @@ import { Card } from "../logic"
 
 interface CardProps extends Card {
   player: string
+  show: boolean
 }
 
 export function ShowCard(props: CardProps) {
@@ -13,11 +14,13 @@ export function ShowCard(props: CardProps) {
     kookiness,
     elusiveness,
     zeitgeistRelevance,
-    player
+    player,
+    show
   } = props
 
-  return (
-      <section className="card">
+  
+    { return show 
+     ? (<section className="card">
         <h2>{player}</h2>
         <img src={image} className="card-image" alt={alt} />
         <h3 className="name">
@@ -28,6 +31,9 @@ export function ShowCard(props: CardProps) {
         <h3 id="p1Kookiness">Kookiness: {kookiness}</h3>
         <h3 id="p1Elusiveness">Elusiveness: {elusiveness}</h3>
         <h3 id="p1ZeitgeistRelevance">Zeitgeist Relevance: {zeitgeistRelevance}</h3>
-      </section>
-  )
+      </section>)
+     : (<section className="card">
+   </section>)
+    }
+  
 }
