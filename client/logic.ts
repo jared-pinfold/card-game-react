@@ -18,59 +18,59 @@ type Str = {
 type Deck = Card[]
 type Attribute = keyof Str
 
-export { Deck, createStartingDeck, chooseAttribute, didSomeoneWin, maintainPool }
+export { Deck, Card, createStartingDeck, chooseAttribute, didSomeoneWin, maintainPool }
 
 function createStartingDeck(): [Deck, Deck] {
   // create a starting deck of cards, randomising the attribute values between 1 and 10
   const seed = [
     {
       name: 'Banana',
-      image: './images/banana.jpeg',
+      image: 'client/images/banana.jpeg',
       alt: 'Photograph of a ripe banana',
     },
     {
       name: 'Empty CD Case',
-      image: './images/emptyCdCase.jpeg',
+      image: 'client/images/emptyCdCase.jpeg',
       alt: 'Photograph of an empty, clear CD case',
     },
     {
       name: 'Bicycle',
-      image: './images/bicycle.webp',
+      image: 'client/images/bicycle.webp',
       alt: 'Photograph of a black bicycle',
     },
     {
       name: 'Oatmeal',
-      image: './images/oatmeal.jpeg',
+      image: 'client/images/oatmeal.jpeg',
       alt: 'Photograph of a bowl of oatmeal with strawberry garnish',
     },
     {
       name: 'Padlock',
-      image: './images/padlock.jpeg',
+      image: 'client/images/padlock.jpeg',
       alt: 'Photograph of an unlocked padlock with a key sitting next to it',
     },
     {
       name: 'Birthday Present',
-      image: './images/birthdayPresent.jpeg',
+      image: 'client/images/birthdayPresent.jpeg',
       alt: 'Photograph of a black and white striped box with a lid and a silver bow on top.',
     },
     {
       name: 'Printer',
-      image: './images/printer.webp',
+      image: 'client/images/printer.webp',
       alt: 'Cartoon picture of a home office printer',
     },
     {
       name: 'Shoe',
-      image: './images/shoe.jpeg',
+      image: 'client/images/shoe.jpeg',
       alt: 'Photograph of a single brown leather shoe',
     },
     {
       name: 'Squirrel',
-      image: './images/squirrel.jpeg',
+      image: 'client/images/squirrel.jpeg',
       alt: 'Photograph of a grey squirrel standing on a rock eating a nut',
     },
     {
       name: 'Snowperson',
-      image: './images/snowperson.webp',
+      image: 'client/images/snowperson.webp',
       alt: 'Cartoon picture of a snowperson wearing a top hat and a scarf',
     },
   ].map((card) => {
