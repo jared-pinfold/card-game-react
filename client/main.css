@@ -64,10 +64,6 @@ hr {
 	margin: 0px 15px 15px 15px;
 }
 
-.reveal-card {
-  display: none;
-}
-
 .attribute {
   width: 100%;
   display: flex;
@@ -80,10 +76,6 @@ hr {
 
 .card-image {
   width: 20%;
-}
-
-.card-back {
-  display: none;
 }
 
 .decks {
